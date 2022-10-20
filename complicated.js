@@ -2412,5 +2412,6 @@ function matchIcon(filename) {
     if (/\.zabstr?$/i.test(filename)) { return "zork"; }
     if (/\.zil$/i.test(filename)) { return "zork"; }
     if (/\.mud$/i.test(filename)) { return "zork"; }
+    
 }
 module.exports = matchIcon;
