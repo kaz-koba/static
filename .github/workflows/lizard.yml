@@ -1,6 +1,10 @@
 name: Lizard Runner
 on:
-  push:
+  workflow_run:
+      workflows: ["CodeQL"]
+      branches: [main]
+      types:
+        - completed
 
 jobs:
   lizard:
