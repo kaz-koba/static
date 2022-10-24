@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "strict": false,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "^/*": ["./*"],
+      "@growi/plugin-lsx/*": ["../plugin-lsx/src/*"],
+      "@growi/*": ["../*/src"],
+      "debug": ["./src/server/utils/logger/alias-for-debug"]
+    }
+  }
+}

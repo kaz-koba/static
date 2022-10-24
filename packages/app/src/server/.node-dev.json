@@ -1,0 +1,3 @@
+{
+  "ignore": ["package.json", ".next", "public/static"]
+}
