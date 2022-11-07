@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  },
+  "scripts": {
+    "test": "lerna run test --stream",
+    "lint": "lerna run lint --stream",
+    "lint:strict": "lerna run lint:strict --stream",
+    "lint:fix": "lerna run lint:fix --stream",
+    "build": "lerna run build --stream",
+    "publish:all": "npm run test && npm run build && lerna publish",
+    "publish:canary": "npm run build && lerna publish --pre-dist-tag canary"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenn-dev/zenn-editor.git"
+  },
+  "author": "catnose99 <catnose99@gmail.com> (https://twitter.com/catnose99)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenn-dev/zenn-editor/issues"
+  },
+  "homepage": "https://github.com/zenn-dev/zenn-editor#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
