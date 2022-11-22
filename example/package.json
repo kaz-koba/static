@@ -1,0 +1,17 @@
+{
+  "name": "serverless-amplify-auth-example",
+  "version": "1.0.3",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "prestart": "cd ../ && npm run build",
+    "start": "sls package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^2.30.3"
+  }
+}
