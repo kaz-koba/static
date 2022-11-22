@@ -1,6 +1,6 @@
-projectKey=static-te
+projectKey=sonere-re
 serverUrl=http://54.250.245.79:9000
 serverVersion=7.9.3.33349
-dashboardUrl=http://54.250.245.79:9000/dashboard?id=static-te
-ceTaskId=AYSc5wa1F-mQwBWT9Tpv
-ceTaskUrl=http://54.250.245.79:9000/api/ce/task?id=AYSc5wa1F-mQwBWT9Tpv
+dashboardUrl=http://54.250.245.79:9000/dashboard?id=sonere-re
+ceTaskId=AYSdO3QQF-mQwBWT9TqQ
+ceTaskUrl=http://54.250.245.79:9000/api/ce/task?id=AYSdO3QQF-mQwBWT9TqQ
