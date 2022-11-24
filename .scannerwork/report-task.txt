@@ -1,6 +1,0 @@
-projectKey=badjs
-serverUrl=http://54.250.245.79:9000
-serverVersion=7.9.3.33349
-dashboardUrl=http://54.250.245.79:9000/dashboard?id=badjs
-ceTaskId=AYSd3ivaF-mQwBWT9TqY
-ceTaskUrl=http://54.250.245.79:9000/api/ce/task?id=AYSd3ivaF-mQwBWT9TqY
