@@ -1,6 +1,7 @@
 <h3 align="center">
   MinimalModal.js
 </h3>
+<h1></h1>
 
 <p align="center">
   <img src="https://img.shields.io/npm/l/@yuki0410/minimal-modal" alt="licence">
