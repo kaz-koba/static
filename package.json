@@ -1,0 +1,97 @@
+{
+  "name": "@yuki0410/minimal-modal",
+  "version": "2.1.7",
+  "description": "Minimal and Tiny Javascript Library for Modal Dialog",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "module": "dist/index.esm.js",
+  "browser": "dist/minimal-modal.js",
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "types",
+    "dist"
+  ],
+  "keywords": [
+    "front-end",
+    "modal",
+    "dialog",
+    "vanillajs",
+    "typescript"
+  ],
+  "author": {
+    "name": "yuki0410",
+    "url": "https://twitter.com/yuki0410_"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint --fix src/**/*.ts",
+    "lint-staged": "lint-staged",
+    "start": "browser-sync start --config \"./.bs-config.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ohnaka0410@github.com/ohnaka0410/minimal-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ohnaka0410/minimal-modal/issues"
+  },
+  "homepage": "https://github.com/ohnaka0410/minimal-modal#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.(html,css)": [
+        "prettier --write",
+        "git add"
+      ],
+      "*.(ts,tsx,js,jsx)": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "dist/**/*"
+    ]
+  },
+  "dependencies": {
+    "body-scroll-lock": "^3.1.5",
+    "core-js": "^3.11.0",
+    "focus-trap": "^6.4.0",
+    "lodash.merge": "^4.6.2",
+    "tslib": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/body-scroll-lock": "^2.6.1",
+    "@types/lodash.merge": "^4.6.6",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "browser-sync": "^2.26.14",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.upperfirst": "^4.3.1",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.9.3"
+  }
+}
